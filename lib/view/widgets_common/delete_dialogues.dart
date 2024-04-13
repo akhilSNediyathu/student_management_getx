@@ -5,10 +5,10 @@ class DeleteDialog extends StatelessWidget {
   final VoidCallback onDelete;
 
   const DeleteDialog({
-    Key? key,
+    super.key,
     required this.onCancel,
     required this.onDelete,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
