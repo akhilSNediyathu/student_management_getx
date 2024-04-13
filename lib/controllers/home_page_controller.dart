@@ -31,12 +31,12 @@ class HomeController extends GetxController{
     } else {
       filteredStudents.assignAll(students
           .where((student) =>
-              student.name.toLowerCase().contains(query.toLowerCase()))
+              student.name.trim().toLowerCase().contains(query.trim().toLowerCase()))
           .toList());
     }
   }
 
-  void toggleSearch() {
+   toggleSearch() {
     isSearching.toggle();
     if (!isSearching.isTrue) {
       filteredStudents.assignAll(students);

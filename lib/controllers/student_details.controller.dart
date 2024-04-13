@@ -96,7 +96,7 @@ class StudentDetailsController extends GetxController {
         );
         
         db.deleteStudent(student.id);
-        Get.until((route) => Get.currentRoute == '/HomeScreen');
+        Get.until((route) => Get.currentRoute == '/HomePage');
     }));
   }
 }

@@ -14,7 +14,7 @@ class StudentDetailspage extends StatelessWidget {
       Get.put(StudentDetailsController());
   final Student student;
 
-  StudentDetailspage({Key? key, required this.student}) : super(key: key);
+  StudentDetailspage({super.key, required this.student});
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +66,7 @@ class StudentDetailspage extends StatelessWidget {
                   kheight,
                  
                   Text(
-                    'Name :               ${student.name}',
+                    'Name :   ${student.name}',
                     style: contenttxt,
                   ),
                   kheight,
